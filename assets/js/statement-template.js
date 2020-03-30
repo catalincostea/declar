@@ -15,7 +15,8 @@ var templateString = `
     }
 
     .text-box {
-        border: 1px solid #000;
+        font-weight: bold;
+        /* border: 1px solid #000;*/
         line-height: 0.7cm;
         padding-left: 2px;
     }
@@ -32,7 +33,7 @@ var templateString = `
 
     .info {
         display: inline-block;
-        font-weight: bold;
+        /* font-weight: bold; */
         font-size: 16px;
     }
 
@@ -57,7 +58,7 @@ var templateString = `
     }
 
     .radio-paragraph {
-        margin-left: 1cm;
+        margin-left: 0cm;
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -81,38 +82,28 @@ var templateString = `
     .destinations-container {
         width: 91.7%;
     }
+    .center {
+       text-align: center;
+    }
 </style>
 <div class="page">
-    <h1 style="text-align: center; font-size: 18px">DECLARAȚIE PE PROPRIE RĂSPUNDERE</h1>
+    <div class="center" style="font-size: 18px">DECLARAȚIE PE PROPRIE RĂSPUNDERE</div>
+    <br>
     <div class="paragraph">
         <div class="info" style="margin-right: 9px;">Nume, prenume:</div>
-        <div class="text-box text-box-m">
-            {{lastName}}
-        </div>
-        <div class="text-box text-box-m">
-            {{firstName}}
-        </div>
-    </div>
-    <div class="paragraph">
+        <div class="text-box text-box-m"> {{lastName}} {{firstName}} </div>
+        <br>
         <div class="info" style="margin-right: 30px;">Data nașterii:</div>
-        <div class="text-box" style="display: inline-block; width: 8%;">{{birthDay}}</div>
-        <div class="text-box" style="display: inline-block; width: 8%;">{{birthMonth}}</div>
-        <div class="text-box" style="display: inline-block; width: 17.7%;">{{birthYear}}</div>
-    </div>
-    <div class="paragraph">
+        <div class="text-box" style="display: inline-block; width: 8%;">{{birthDay}}.{{birthMonth}}.{{birthYear}}</div>
+        <br>
         <div class="info" style="display: inline-block; vertical-align: top">Adresa locuinței:</div>
-        <div class="address-container">
-            <div class="text-box text-box-xxl">
-                {{city}}, {{county}}, {{streetName}}, Nr. {{streetNo}}
+            <div class="text-box text-box">
+                {{city}}, {{county}}, {{streetName}}, Nr. {{streetNo}} {{building}} {{buildingEntrance}} {{floor}} {{apartmentNo}} &nbsp;
             </div>
-            <div class="text-box text-box-xxl" style="margin-top: 5px;">
-                {{building}} {{buildingEntrance}} {{floor}} {{apartmentNo}} &nbsp;
-            </div>
-            <div class="small-text" style="margin-top: 5px;">Se va completa adresa locuinței în care
+            <div class="small-text" style="margin-left: 0px;">Se va completa adresa locuinței în care
                 persoana locuiește
                 în fapt, indiferent dacă este identică sau nu cu cea menționată în actul de identitate.
             </div>
-        </div>
     </div>
     <div class="paragraph" style="margin-top: 0.8cm;">
         <div class="info">Locul/locurile deplasării:</div>
@@ -189,7 +180,7 @@ var templateString = `
             <div class="radio-text-first-row">10. asigurarea de bunuri necesare desfășurării activității profesionale.
             </div>
         </div>
-        <div class="small-text" style="margin-left: 0.5cm; margin-top: 0.5cm">Se va bifa doar motivul/motivele
+        <div class="small-text" style="margin-left: 0cm; margin-top: 0.5cm">Se va bifa doar motivul/motivele
             deplasării dintre cele
             prevăzute în listă, nefiind permise deplasări realizate
             invocând
@@ -197,14 +188,15 @@ var templateString = `
         </div>
     </div>
 
-    <div class="paragraph" style="text-align: center">
-        <div style="width: 49%; display: inline-block">Data declarației ............{{date}}............</div>
+    <div class="paragraph" style="text-align: left">
+        <div style="width: 49%; display: inline-block">Data: {{date}}</div>
         <div style="width: 49%; display: inline-block">
             Semnătura
             <img style="width: 200px; height: 70px;" src="{{signatureSrc}}">
         </div>
     </div>
-    <div style="font-weight: bold; font-size: 16px;">Persoanele care au împlinit vârsta de 65 de ani completează doar
+    <hr align=left>
+    <div style="font-size: 16px;">Persoanele care au împlinit vârsta de 65 de ani completează doar
         pentru motivele prevăzute în câmpurile 1-6,
         deplasarea fiind permisă zilnic doar în intervalul orar 11.00 – 13.00.
     </div>
