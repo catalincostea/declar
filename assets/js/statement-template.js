@@ -121,16 +121,12 @@ var templateString = `
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_1}}"></div></div>
             <div class="radio-text-first-row">1. interes profesional, inclusiv între locuință/gospodărie și
-                locul/locurile de desfășurare a
-            </div>
-            <div class="radio-text-row">activității profesionale și înapoi</div>
+                locul/locurile de desfășurare a activității profesionale și înapoi</div>
         </div>
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_2}}"></div></div>
             <div class="radio-text-first-row">2. asigurarea de bunuri care acoperă necesitățile de bază ale persoanelor
-                și animalelor de
-            </div>
-            <div class="radio-text-row">companie/domestice</div>
+                și animalelor de companie/domestice</div>
         </div>
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_3}}"></div></div>
@@ -141,16 +137,12 @@ var templateString = `
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_4}}"></div></div>
             <div class="radio-text-first-row">4. motive justificate, precum îngrijirea/ însoțirea unui minor/copilului,
-                asistența persoanelor
-            </div>
-            <div class="radio-text-row">vârstnice, bolnave sau cu dizabilități ori deces al unui membru de familie</div>
+                asistența persoanelor vârstnice, bolnave sau cu dizabilități ori deces al unui membru de familie</div>
         </div>
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_5}}"></div></div>
             <div class="radio-text-first-row">5. activitate fizică individuală (cu excluderea oricăror activități
-                sportive de echipă/ colective)
-            </div>
-            <div class="radio-text-row">sau pentru nevoile animalelor de companie/domestice, în apropierea locuinței
+                sportive de echipă/ colective) sau pentru nevoile animalelor de companie/domestice, în apropierea locuinței
             </div>
         </div>
         <div class="radio-paragraph">
