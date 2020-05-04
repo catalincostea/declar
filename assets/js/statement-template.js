@@ -118,15 +118,23 @@ var templateString = `
     </div>
     <div class="paragraph" style="margin-top: 0.8cm;">
         <div class="info">Motivul deplasării:</div>
+
+
+
+
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_1}}"></div></div>
             <div class="radio-text-first-row">1. interes profesional, inclusiv între locuință/gospodărie și
-                locul/locurile de desfășurare a activității profesionale și înapoi</div>
+                locul/locurile de desfășurare a
+            </div>
+            <div class="radio-text-row">activității profesionale și înapoi</div>
         </div>
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_2}}"></div></div>
             <div class="radio-text-first-row">2. asigurarea de bunuri care acoperă necesitățile de bază ale persoanelor
-                și animalelor de companie/domestice</div>
+                și animalelor de
+            </div>
+            <div class="radio-text-row">companie/domestice</div>
         </div>
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_3}}"></div></div>
@@ -137,21 +145,18 @@ var templateString = `
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_4}}"></div></div>
             <div class="radio-text-first-row">4. motive justificate, precum îngrijirea/ însoțirea unui minor/copilului,
-                asistența persoanelor vârstnice, bolnave sau cu dizabilități ori deces al unui membru de familie</div>
+                asistența persoanelor
+            </div>
+            <div class="radio-text-row">vârstnice, bolnave sau cu dizabilități ori deces al unui membru de familie</div>
         </div>
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_5}}"></div></div>
-            <div class="radio-text-first-row">5. activitate fizică individuală (cu excluderea oricăror activități
-                sportive de echipă/ colective) sau pentru nevoile animalelor de companie/domestice, în apropierea locuinței
-            </div>
+            <div class="radio-text-first-row">5. activitate fizică individuală (cu excluderea oricăror activități sportive de echipă/ colective) </div>
+            <div class="radio-text-row">sau pentru nevoile animalelor de companie/domestice, în apropierea locuinței, deplasare scurtă, lângă domiciliu, pentru desfășurarea de activități fizice individuale, în aer liber, cu excluderea oricărei forme de activitate sportivă colectivă;</div>
         </div>
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_6}}"></div></div>
             <div class="radio-text-first-row">6. realizarea de activități agricole</div>
-        </div>
-        <div class="radio-paragraph">
-            - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-            - - - - - - - - - - - - - - -
         </div>
         <div class="radio-paragraph">
             <div class="radio-checkbox-row"><div class="radio {{reason_7}}"></div></div>
@@ -172,6 +177,9 @@ var templateString = `
             <div class="radio-text-first-row">10. asigurarea de bunuri necesare desfășurării activității profesionale.
             </div>
         </div>
+
+
+
         <div class="small-text" style="margin-left: 0cm; margin-top: 0.5cm">Se va bifa doar motivul/motivele
             deplasării dintre cele
             prevăzute în listă, nefiind permise deplasări realizate
@@ -188,9 +196,7 @@ var templateString = `
         </div>
     </div>
     <hr align=left>
-    <div style="font-size: 16px;">Persoanele care au împlinit vârsta de 65 de ani completează doar
-        pentru motivele prevăzute în câmpurile 1-6,
-        deplasarea fiind permisă zilnic doar în intervalul orar 11.00 – 13.00.
+    <div style="font-size: 16px;">Persoanele care au împlinit vârsta de 65 de ani completează doar pentru motivele prevăzute la punctele 1-6 și 9. Deplasarea se face în orice interval orar, pentru motivele prevăzute la pct.1, 3, 6 și 9, respectiv între orele 07.00-11.00 și 19.00-22.00, pentru motivele prevăzute la punctele 2, 4 și 5.
     </div>
 </div>
 `;

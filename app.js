@@ -2,6 +2,14 @@ const express = require('express');
 const app = express();
 var path = require('path');
 
+// google analytics section
+// Get the module
+var expressGoogleAnalytics = require('express-google-analytics');
+// Insert your Google Analytics Id, Shoule be something like 'UA-12345678-9'
+var analytics = expressGoogleAnalytics('UA-165347169-1');
+//Add to express before your routes
+app.use(analytics);
+
 
 var fs = require('fs')
 var morgan = require('morgan')
@@ -34,3 +42,4 @@ https.createServer({
 }, app).listen(443, () => {
   console.log('Listening...')
 })*/
+
